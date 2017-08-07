@@ -1,0 +1,51 @@
+Idea is to make each request concurrent. 
+
+Requests cannot be served iteratively meaning complete serving first request and then serve second request. 
+This is not suitable because if the first request gets stuck for any reason all the request following the first request starve.
+
+Asynchronous IO / Non-Blocking IO.
+
+Webserver support for concurrency is a Combination of Multiprocessing and Multi-Threading in modern approach.
+
+MultiProcessing: 
+
+A Process is just a program in execution. Every process has its own address/memory place.
+2 Processes are isolated by default. Each process cannot access other processee's address/memory space. Unless a special API is used.
+
+MultiProcessing - Each process is alloted certain period of time and once the time runs out the process is pushed to the back of the queue. Next process takes the precedence.
+This type of execution is relatively slow and inheriently inefficient as the processor switch time is considerable even though in milliseconds. Time spent in context switch is wasted.
+
+MultiThreading:
+
+A Thread in Jargon refers to the Current thread / Thread of execution. Java has a Thread class. A Thread is a sequence of executable instructions. 
+A thread is one or more machine level instructions.
+Thread of size 1 is very small. A thread of size 100 is medium.
+
+A modern process consists of atleast 1 thread of execution. A process with multi threads are called multithreaded process. A process with single thread is called Single threaded Process.
+
+multithreading Is efficient - as the context switch between one thread in a process to another thread in a process is nano seconds not milli seconds.
+
+Threads with in the same process share the same address space. If there are 2 threads inside of a process then both these threads have access to the same memory location. This is results in
+race conditions, memory consistency challenge. 
+
+Multi threading is a challenge for programmers to make sure threads in a processor don't step on each other. 
+
+In modern operating systems its threads that get scheduled to run in a CPU. 
+
+In Java there is APIs to do both - Multithreading and Multiprocessing.
+
+In Java concurrent programming is through multi threading. Rich assortment of API for multi threading in JAVA. Even though Java supports Multi Processing its not preferred.
+
+
+Concurrency and Parallelism
+
+8 processors meaning 8 CPUs. In java you don't have to do anything if the number of processors increase. processing automatically becomes parallel. Multiple work begin done at the same time.
+Multiple CPU/Processors means parallelism automatically.
+
+There are various ways to delay a thread in Java - wait() Object class s the efficient way to do waiting. It puts thread to Sleep and doesnt waste CPU cyccle.
+
+How is Non-Blocking different from Multithreading and Multiprocessing ??
+
+Multithreading and MultiProcessing are different ways of doing Concurrent programming. Non-Blocking IO is used as auxilary to one of those.  
+
+

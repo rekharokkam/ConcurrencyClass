@@ -1,0 +1,9 @@
+A Deamon thread is a worker thread. Only deamon threads cannot keep an application alive. If there are only deamon threads then an application would die. 
+User threads by contrast can keep an application alive. An application stays alive as long as there is at least one User thread that's active.
+
+main thread exists when it leaves main method meaning once main method ends/completes main thread exits. Once a thread dies it cannot be restarted. Its dead for good.
+
+When a Thread is created it gets its own stack scratchpad (temporary storage) for storage at the system level. It gets 4 Kb of storage to use for parameters and local variables.
+
+A thread created by User Thread is a User thread. A thread created by Deamon thread is a deamon thread.
+
