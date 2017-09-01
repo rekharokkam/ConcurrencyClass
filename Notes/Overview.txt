@@ -13,7 +13,7 @@ A Process is just a program in execution. Every process has its own address/memo
 2 Processes are isolated by default. Each process cannot access other processee's address/memory space. Unless a special API is used.
 
 MultiProcessing - Each process is alloted certain period of time and once the time runs out the process is pushed to the back of the queue. Next process takes the precedence.
-This type of execution is relatively slow and inheriently inefficient as the processor switch time is considerable even though in milliseconds. Time spent in context switch is wasted.
+This type of execution is relatively slow and inherently inefficient as the processor switch time is considerable even though in milliseconds. Time spent in context switch is wasted.
 
 MultiThreading:
 
@@ -21,7 +21,7 @@ A Thread in Jargon refers to the Current thread / Thread of execution. Java has 
 A thread is one or more machine level instructions.
 Thread of size 1 is very small. A thread of size 100 is medium.
 
-A modern process consists of atleast 1 thread of execution. A process with multi threads are called multithreaded process. A process with single thread is called Single threaded Process.
+A modern process consists of at least 1 thread of execution. A process with multi threads are called multithreaded process. A process with single thread is called Single threaded Process.
 
 multithreading Is efficient - as the context switch between one thread in a process to another thread in a process is nano seconds not milli seconds.
 
@@ -42,10 +42,10 @@ Concurrency and Parallelism
 8 processors meaning 8 CPUs. In java you don't have to do anything if the number of processors increase. processing automatically becomes parallel. Multiple work begin done at the same time.
 Multiple CPU/Processors means parallelism automatically.
 
-There are various ways to delay a thread in Java - wait() Object class s the efficient way to do waiting. It puts thread to Sleep and doesnt waste CPU cyccle.
+There are various ways to delay a thread in Java - wait() Object class s the efficient way to do waiting. It puts thread to Sleep and doesn't waste CPU cycle.
 
 How is Non-Blocking different from Multithreading and Multiprocessing ??
 
-Multithreading and MultiProcessing are different ways of doing Concurrent programming. Non-Blocking IO is used as auxilary to one of those.  
+Multithreading and MultiProcessing are different ways of doing Concurrent programming. Non-Blocking IO is used as auxillary to one of those.  
 
 

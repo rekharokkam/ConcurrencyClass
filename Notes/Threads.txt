@@ -1,9 +1,35 @@
-A Deamon thread is a worker thread. Only deamon threads cannot keep an application alive. If there are only deamon threads then an application would die. 
+A daemon thread is a worker thread. Only daemon threads cannot keep an application alive. If there are only daemon threads then an application would die. 
 User threads by contrast can keep an application alive. An application stays alive as long as there is at least one User thread that's active.
 
-main thread exists when it leaves main method meaning once main method ends/completes main thread exits. Once a thread dies it cannot be restarted. Its dead for good.
+main thread exits when it leaves main method meaning once main method ends/completes main thread exits. Once a thread dies it cannot be restarted. Its dead for good.
 
-When a Thread is created it gets its own stack scratchpad (temporary storage) for storage at the system level. It gets 4 Kb of storage to use for parameters and local variables.
+When a Thread is created it gets its own stack scratchpad (temporary storage) for storage at the system level. 
+It gets 4 Kb of storage to use for parameters and local variables as Thread is a sequence of program executables. If there are not enough CPUs registered then this allocation happens from the Stack.
 
-A thread created by User Thread is a User thread. A thread created by Deamon thread is a deamon thread.
+A thread created by User Thread is a User thread. A thread created by Daemon thread is a daemon thread.
+
+depiction of Thread Concepts that I will be learning in this class
+
+Core Thread API - base level - Thread class and RUnnable Interface
+Executor Service - Thread pools under the hood , high-level management
+Fork/Join framework - scatter - gather idiom with Task-stealing
+Parallel Streams - Scatter/Gather for data Streams
+
+A thread type can be changed ONE time from a daemon to User and User to daemon before the thread starts running. Once the thread starts running "type" change is not allowed.
+
+Thread class has an empty run method - Open brace and close brace.
+
+After calling the start method thread executes the body of run method and anything that is called inside of run method.
+A thread dies naturally after completing the execution of run method. after exiting 
+A thread is stopped in between by calling stop() this is deprecated. Other way is to call System.exit (); This stops all the threads that stop the JVM.
+
+Every java thread spans a native thread.
+
+Daemon threads are supposed to be a background worker threads. Only User Thread can keep an applicaion alive. 
+
+
+
+ 
+
+
 
