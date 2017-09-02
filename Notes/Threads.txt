@@ -27,6 +27,8 @@ Every java thread spans a native thread.
 
 Daemon threads are supposed to be a background worker threads. Only User Thread can keep an applicaion alive. 
 
+Each local variable is safe from Multi threading as each Thread will have a copy of this variable and act on its own copy without interfering in other thread's local copy.
+
 
 
  
