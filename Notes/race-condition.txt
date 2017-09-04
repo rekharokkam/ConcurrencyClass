@@ -1,0 +1,9 @@
+Happens when there are more than 1 thread in the same process.
+Happens for a shared resource in the memory. Since both the threads have access to the same memory of the processor race condition happens.
+For race condition to happen there should at least be 1 write operation meaning at least one thread should perform the write operation amongst other threads.
+Threads inside the same processor have access to the same memory location.
+
+Synchronization needs to happen on the same lock Object.
+Synchronization is across processors. Ex - there are 2 processors each with 2 threads in that case synchronization is between all 4 threads of 2 different processors.
+
+ 
