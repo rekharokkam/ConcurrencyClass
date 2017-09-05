@@ -16,8 +16,6 @@ public class RaceConditionAtomicC
 		}catch (InterruptedException exception) {
 			exception.printStackTrace(System.err);
 		}
-
-		
 System.out.println("account balance : " + AccountAtomicC.balance.get());		
 	}
 }
