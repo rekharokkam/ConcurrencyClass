@@ -21,6 +21,6 @@ public class RaceConditionNoSync
 		}
 		
 		//print the shared resource value
-		System.out.println("AccountSync : balance " + AccountSync.balance);
+		System.out.println("AccountSync : balance " + AccountNoSync.balance);
 	}
 }

@@ -12,7 +12,7 @@ class Miser extends Thread{
 	@Override
 	public void run () {
 		for (int i = 0; i < howMany; i ++){
-			AccountSync.balance++;
+			AccountNoSync.balance++;
 		}
 	}
 }
@@ -28,12 +28,12 @@ class SpendThrift extends Thread {
 	@Override
 	public void run() {
 		for (int i = 0; i < howMany; i ++){
-			AccountSync.balance--;
+			AccountNoSync.balance--;
 		}
 	}
 }
 
-public class AccountSync
+public class AccountNoSync
 {
 	public static int balance = 0;//Common Shared resource
 }
