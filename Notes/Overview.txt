@@ -1,3 +1,8 @@
+Recordings Link - https://www.safaribooksonline.com/live-training/courses/developing-concurrent-and-parallel-applications-in-java/0636920074021/
+Session 1 - http://event.on24.com/eventRegistration/console/EventConsoleApollo.jsp?&eventid=1369899&sessionid=1&username=&partnerref=&format=fhaudio&mobile=false&flashsupportedmobiledevice=false&helpcenter=false&key=B7B84D9A8A30ED8D04D58B77E9E767D4&text_language_id=en&playerwidth=1000&playerheight=650&overwritelobby=y&eventuserid=172414951&contenttype=A&mediametricsessionid=143957982&mediametricid=1975000&usercd=172414951&mode=launch
+Session 2 - http://event.on24.com/eventRegistration/console/EventConsoleApollo.jsp?&eventid=1369903&sessionid=1&username=&partnerref=&format=fhaudio&mobile=false&flashsupportedmobiledevice=false&helpcenter=false&key=BFE1E9A722678D437DBBA8E0743C6AFF&text_language_id=en&playerwidth=1000&playerheight=650&overwritelobby=y&eventuserid=179348531&contenttype=A&mediametricsessionid=143957998&mediametricid=1975007&usercd=179348531&mode=launch
+
+
 Idea is to make each request concurrent. 
 
 Requests cannot be served iteratively meaning complete serving first request and then serve second request. 
