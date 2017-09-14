@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- The XSD namespace points to the location that defines the maven xml structure. -->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd ">
+
+	
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>concurrency-class</artifactId>
+	<groupId>com.learning.basicjava</groupId>
+	<version>1.0.0</version>
+
+  	<name> Learning Java 8 Concurrency </name> <!-- An informal name for the project -->
+  	<description>This project was created to follow along the Concurrency in java 8 2 day course</description>
+  	<url>https://www.safaribooksonline.com/live-training/courses/developing-concurrent-and-parallel-applications-in-java/0636920074021/</url> <!-- an URL from where additional Info can be obtained -->
+
+</project>
